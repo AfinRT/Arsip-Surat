@@ -1,0 +1,79 @@
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /* Jenis font untuk teks tubuh halaman */
+    background-color: #f4f4f4; /* Warna latar belakang halaman */
+}
+
+.container {
+    padding-top: 20px; /* Padding atas kontainer */
+    max-width: 1200px; /* Lebar maksimum kontainer */
+    margin-left: 41vh; /* Posisi kontainer di tengah halaman */
+}
+.mb-0{
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+}
+.mb-11{
+   float: left;
+   font-size: 20px;
+   font-weight: 500;
+}
+.card {
+    margin-top: 20px; /* Jarak atas kartu dari elemen di atasnya */
+    border: 1px solid rgba(0, 0, 0, .125); /* Border kartu */
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .1); /* Efek bayangan kartu */
+    background-color: #fff; /* Warna latar belakang kartu */
+}
+
+.table th, .table td {
+    text-align: center; /* Posisi teks di tengah untuk sel header dan sel data */
+    vertical-align: middle; /* Posisi teks di tengah secara vertikal */
+}
+
+.btn-action {
+    white-space: nowrap; /* Mencegah pemutaran baris tombol aksi */
+}
+
+/* Gaya tombol */
+.btn-info {
+    background-color: #007bff; /* Warna latar belakang tombol info */
+    border-color: #007bff; /* Warna border tombol info */
+    color: #fff; /* Warna teks tombol info */
+}
+
+.btn-info:hover {
+    background-color: #0056b3; /* Warna latar belakang tombol info saat dihover */
+    border-color: #0056b3; /* Warna border tombol info saat dihover */
+}
+
+.btn-warning {
+    background-color: #ffc107; /* Warna latar belakang tombol peringatan */
+    border-color: #ffc107; /* Warna border tombol peringatan */
+}
+
+.btn-warning:hover {
+    background-color: #e0a800; /* Warna latar belakang tombol peringatan saat dihover */
+    border-color: #d39e00; /* Warna border tombol peringatan saat dihover */
+}
+
+.btn-danger {
+    background-color: #dc3545; /* Warna latar belakang tombol bahaya */
+    border-color: #dc3545; /* Warna border tombol bahaya */
+}
+
+.btn-danger:hover {
+    background-color: #c82333; /* Warna latar belakang tombol bahaya saat dihover */
+    border-color: #bd2130; /* Warna border tombol bahaya saat dihover */
+}
+.filter-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.filter-container input[type="date"] {
+    padding: 5px;
+    margin-right: 10px;
+}
+.filter-container button {
+    padding: 5px 10px;
+}

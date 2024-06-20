@@ -1,0 +1,141 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.content {
+  margin-left: 250px;
+  padding: 20px;
+  padding-top: 80px; /* Ensure content does not go behind navbar */
+}
+
+.main-content {
+  padding: 20px;
+  background-color: #f8f9fa; /* Light grey background */
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Light shadow */
+}
+
+/* Sidebar styling */
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  position: fixed;
+  background-color: rgb(39, 39, 83); /* Dark sidebar background */
+  padding-top: 20px;
+  top: 0;
+  left: 0;
+  overflow-y: auto; /* Allow scrolling if needed */
+  z-index: 100; /* Ensure sidebar is above content */
+}
+
+.sidebar a {
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #f8f9fa; /* Light text color */
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.sidebar a:hover {
+  background-color: #6c757d; /* Darker background on hover */
+}
+
+.sidebar .active {
+  background-color: #e8491d; /* Warna latar belakang tautan saat aktif */
+}
+
+.sidebar .dropdown-menu {
+  background-color: rgb(39, 39, 83); /* Dark sidebar background */
+  border: none;
+}
+
+.sidebar .dropdown-item {
+  color: #f8f9fa; /* Light dropdown text */
+}
+
+.sidebar .dropdown-item:hover {
+  background-color: #6c757d; /* Darker background on dropdown item hover */
+}
+
+.sidebar-logo {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sidebar-logo img {
+  width: 80px; /* Adjust logo size */
+  height: auto;
+}
+
+/* Navbar styling */
+.navbar {
+  background-color: rgb(51, 51, 96); /* Dark sidebar background */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  z-index: 99; /* Ensure navbar is above content */
+}
+
+.navbar .navbar-brand {
+  color: #f8f9fa; /* Light navbar text */
+}
+
+.navbar .navbar-toggler {
+  border-color: #f8f9fa; /* Light border color for toggler */
+}
+
+.navbar .navbar-toggler-icon {
+  background-color: #f8f9fa; /* Light background for toggler icon */
+}
+
+.navbar .form-control {
+  width: 400px; /* Adjust search input width */
+  border-color: #6c757d; /* Darker border color for search input */
+  margin-left: -40vh; /* Move search input to right */
+}
+
+.navbar .form-control:focus {
+  border-color: #6c757d; /* Darker border color on focus */
+  box-shadow: none; /* Remove default focus shadow */
+}
+
+.navbar .btn-outline-light {
+  border-color: #6c757d; /* Darker border color for search button */
+  color: #f8f9fa; /* Light search button text */
+}
+
+.navbar .btn-outline-light:hover {
+  background-color: #6c757d; /* Darker background on search button hover */
+  color: #f8f9fa; /* Light text on hover */
+}
+
+/* Page content */
+.page-title {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.page-title h2 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #343a40; /* Dark page title color */
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .content {
+    margin-left: 0;
+  }
+
+  .navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 999; /* Ensure navbar is above sidebar */
+  }
+
+  .navbar .form-control {
+    width: 100%; /* Full width on smaller screens */
+    margin-left: 0; /* Remove margin */
+  }
+}

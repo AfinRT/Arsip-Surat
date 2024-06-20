@@ -1,0 +1,79 @@
+body {
+  background-color: #f8f9fa; /* Warna latar belakang yang ringan untuk keseluruhan halaman */
+  font-family: "Arial", sans-serif; /* Font standar untuk keseluruhan halaman */
+}
+.container {
+  padding-top: 20px; /* Padding atas kontainer */
+  max-width: 1200px; /* Lebar maksimum kontainer */
+  margin-left: 41vh; /* Posisi kontainer di tengah halaman */
+}
+.mb-0 {
+  border-bottom: 1px solid black;
+  padding-bottom: 10px;
+}
+/* Mengatur card agar memiliki bayangan dan border radius */
+.card {
+  margin-top: 20px; /* Jarak atas kartu dari elemen di atasnya */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Memberikan bayangan lembut pada card */
+  border-radius: 10px; /* Membuat tepi card menjadi melengkung */
+  background-color: #ffffff; /* Warna latar belakang putih untuk card */
+}
+
+/* Menambahkan margin pada form-group untuk memberikan ruang antar elemen */
+.form-group {
+  margin-bottom: 1.5rem; /* Menambahkan margin bawah untuk setiap form-group */
+}
+
+/* Mengatur tombol submit agar lebih menarik */
+.btn-primary {
+  background-color: #007bff; /* Warna biru untuk tombol submit */
+  border-color: #007bff; /* Warna border biru untuk tombol submit */
+  padding: 0.5rem 1.5rem; /* Menambahkan padding pada tombol */
+  font-size: 1rem; /* Menambahkan ukuran font untuk tombol */
+  float: right;
+}
+.btn-secondary {
+  background-color: red; /* Warna biru untuk tombol submit */
+  border-color: red; /* Warna border biru untuk tombol submit */
+  padding: 0.5rem 1.5rem; /* Menambahkan padding pada tombol */
+  font-size: 1rem; /* Menambahkan ukuran font untuk tombol */
+  float: right;
+  margin-left: 5px;
+}
+
+/* Menambahkan hover effect untuk tombol submit */
+.btn-primary:hover {
+  background-color: #0056b3; /* Warna biru tua untuk hover effect */
+  border-color: #0056b3; /* Warna border biru tua untuk hover effect */
+}
+.btn-secondary:hover {
+  background-color: pink;
+  border-color: pink;
+}
+
+/* Mengatur alert agar lebih menarik */
+.alert {
+  border-radius: 5px; /* Membuat tepi alert menjadi melengkung */
+  padding: 0.75rem 1.25rem; /* Menambahkan padding pada alert */
+  margin-top: 1rem; /* Menambahkan margin atas untuk alert */
+  max-width: 1200px; /* Mengatur lebar maksimum untuk alert */
+  margin-right: auto; /* Membuat margin kanan otomatis agar alert berada di tengah */
+}
+.alert1 {
+  border-radius: 5px; /* Membuat tepi alert menjadi melengkung */
+  padding: 0.75rem 1.25rem; /* Menambahkan padding pada alert */
+  margin-top: 1rem; /* Menambahkan margin atas untuk alert */
+  max-width: 1200px; /* Mengatur lebar maksimum untuk alert */
+  margin-left: 41vh;
+  margin-right: auto; /* Membuat margin kanan otomatis agar alert berada di tengah */
+}
+/* Media query untuk mengatur tampilan pada perangkat dengan ukuran kecil */
+@media (max-width: 576px) {
+  .card {
+    padding: 1rem; /* Menambahkan padding pada card */
+  }
+
+  .btn-primary {
+    width: 100%; /* Membuat tombol submit menjadi 100% lebar pada perangkat kecil */
+  }
+}
